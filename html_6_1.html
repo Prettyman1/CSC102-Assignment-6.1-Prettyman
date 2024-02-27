@@ -1,0 +1,64 @@
+<!--
+Assignment 6.1 User Input Validation
+Created by Tyler Prettyman
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        /* Styling for the form */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* Styling for input fields */
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        /* Styling for the submit button */
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <form id="userForm">
+        <!-- Input for the first name -->
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <!-- Input for the last name -->
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <!-- Input for the zip code -->
+        <input type="number" id="zipCode" placeholder="Zip Code" required>
+        <!-- Submit button for the form -->
+        <input type="submit" value="Reveal the Secret Message">
+    </form>
+    <!-- Container for displaying warnings or secret message -->
+    <div id="messageContainer"></div>
+
+    <!-- Linking the JavaScript file -->
+    <script src="script_6_1.js"></script>
+</body>
+</html>
